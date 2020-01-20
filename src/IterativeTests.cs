@@ -9,9 +9,9 @@ namespace ConnectedColors
         {
             var mat = new Color[0, 0] { };
 
-            var pathLength = Iterative.FindMaxConnectedColors((mat));
+            var area = Iterative.FindMaxConnectedColors((mat));
 
-            Assert.Equal(0, pathLength);
+            Assert.Equal(0, area);
         }
 
         [Fact]
@@ -19,9 +19,9 @@ namespace ConnectedColors
         {
             var mat = new Color[7,3];
 
-            var pathLength = Iterative.FindMaxConnectedColors((mat));
+            var area = Iterative.FindMaxConnectedColors((mat));
 
-            Assert.Equal(21, pathLength);
+            Assert.Equal(21, area);
         }
 
         [Fact]
@@ -29,9 +29,9 @@ namespace ConnectedColors
         {
             var mat = Examples.TechLeadExample();
 
-            var pathLength = Iterative.FindMaxConnectedColors(mat);
+            var area = Iterative.FindMaxConnectedColors(mat);
 
-            Assert.Equal(5, pathLength);
+            Assert.Equal(5, area);
         }
 
         [Fact]
@@ -39,9 +39,9 @@ namespace ConnectedColors
         {
             var mat = Examples.AnotherExampleWithMaxOf5();
 
-            var pathLength = Iterative.FindMaxConnectedColors(mat);
+            var area = Iterative.FindMaxConnectedColors(mat);
 
-            Assert.Equal(5, pathLength);
+            Assert.Equal(5, area);
         }
 
         [Fact]
@@ -49,9 +49,9 @@ namespace ConnectedColors
         {
             var mat = new Color[1000, 1000];
 
-            var pathLength = Iterative.FindMaxConnectedColors((mat));
+            var area = Iterative.FindMaxConnectedColors((mat));
 
-            Assert.Equal(1000000, pathLength);
+            Assert.Equal(1000000, area);
         }
     }
 }

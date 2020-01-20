@@ -31,7 +31,7 @@ namespace ConnectedColors
         public static int CountConnected(Node[,] mat, Node start)
         {
             var target = start.Color;
-            var pathLength = 0;
+            var count = 0;
             var queue = new Queue<Node>();
             queue.Enqueue(start);
             while (queue.Any())
@@ -45,10 +45,10 @@ namespace ConnectedColors
                 {
                     queue.Enqueue(neighbor);
                 }
-                pathLength += 1;
+                count += 1;
                 current.Processed = true;
             }
-            return pathLength;
+            return count;
         }
     }
 }
