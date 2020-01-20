@@ -31,16 +31,16 @@ namespace ConnectedColors
         {
             var target = start.Color;
             if (start.Processed) return 0;
-            var pathLength = 1;
+            var count = 1;
             start.Processed = true;
             var candidates = Utilities.GetNeighbors(start, mat)
                 .Where(x => x.Color == target)
                 .Where(x => !x.Processed);
             foreach (var neighbor in candidates)
             {
-                pathLength += CountConnected(mat, neighbor);
+                count += CountConnected(mat, neighbor);
             }
-            return pathLength;
+            return count;
         }
     }
 }

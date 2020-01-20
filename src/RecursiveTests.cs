@@ -12,9 +12,9 @@ namespace ConnectedColors
         {
             var mat = new Color[0, 0] { };
 
-            var pathLength = Recursive.FindMaxConnectedColors((mat));
+            var area = Recursive.FindMaxConnectedColors((mat));
 
-            Assert.Equal(0, pathLength);
+            Assert.Equal(0, area);
         }
 
         [Fact]
@@ -22,9 +22,9 @@ namespace ConnectedColors
         {
             var mat = new Color[7,3];
 
-            var pathLength = Recursive.FindMaxConnectedColors((mat));
+            var area = Recursive.FindMaxConnectedColors((mat));
 
-            Assert.Equal(21, pathLength);
+            Assert.Equal(21, area);
         }
 
         [Fact]
@@ -32,9 +32,9 @@ namespace ConnectedColors
         {
             var mat = Examples.TechLeadExample();
 
-            var pathLength = Recursive.FindMaxConnectedColors(mat);
+            var area = Recursive.FindMaxConnectedColors(mat);
 
-            Assert.Equal(5, pathLength);
+            Assert.Equal(5, area);
         }
 
         [Fact]
@@ -42,16 +42,16 @@ namespace ConnectedColors
         {
             var mat = Examples.AnotherExampleWithMaxOf5();
 
-            var pathLength = Recursive.FindMaxConnectedColors(mat);
+            var area = Recursive.FindMaxConnectedColors(mat);
 
-            Assert.Equal(5, pathLength);
+            Assert.Equal(5, area);
         }
 
         [Fact(Skip = "Throws StackOverflow")]
         public void StackOverflowOnMillionCellInput()
         {
             var mat = new Color[1000, 1000];
-            var pathLength = Recursive.FindMaxConnectedColors((mat));
+            var area = Recursive.FindMaxConnectedColors((mat));
             Assert.True(false);
         }
     }
