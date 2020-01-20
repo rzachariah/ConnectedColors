@@ -31,4 +31,4 @@ dotnet test
 ```
 
 ## Blog Post
-Posed on medium [here](https://medium.com/@ranjithzachariah/connectedcolors-6a84ad3d1e97)
+On medium [here](https://medium.com/@ranjithzachariah/connectedcolors-6a84ad3d1e97)
