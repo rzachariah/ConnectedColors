@@ -2,7 +2,7 @@
 Answering Google Tech Lead's interview question
 
 ## Background
-Find Google Tech Lead's presentation of his interview question (here)[https://medium.com/free-code-camp/bet-you-cant-solve-this-google-interview-question-4a6e5a4dc8ee]
+Find Google Tech Lead's presentation of his interview question [here](https://medium.com/free-code-camp/bet-you-cant-solve-this-google-interview-question-4a6e5a4dc8ee)
 
 ## Problem
 Given a grid of colored cells, find the maximum number of connected colors.
@@ -24,7 +24,7 @@ Both solutions are linear with the size of the matrix, or O(MN) for a matrix of 
 The Recursive solution is a bit neater, but suffers from StackOverflow on a large enough input.
 
 ## Solution
-A dotnetcore (2.2) solution is provided. You can download dotnetcore for your platform (here)[https://dotnet.microsoft.com/download]
+A dotnetcore (2.2) solution is provided. You can download dotnetcore for your platform [here](https://dotnet.microsoft.com/download)
 
 ## Unit tests
 Tests of both approaches are provided. To execute run
