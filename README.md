@@ -5,9 +5,7 @@ Answering Google Tech Lead's interview question
 Watch Google Tech Lead's presentation of his interview question [here](https://youtu.be/IWvbPIYQPFM).
 
 ## Problem Summarized
-Given a grid of colored cells, find the maximum number of connected colors.
-
-The problem is a variation of the Flood Fill algorithm.
+Given a grid of colored cells, find the maximum number of connected colors. The problem is a variation of Flood Fill.
 
 ## Domain
 I introduce a Color enum and a Node type. The Node includes coordinates, a Color and a Processed flag (to avoid redundant work).
