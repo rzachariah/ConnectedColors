@@ -2,7 +2,7 @@
 Answering Google Tech Lead's interview question
 
 ## Background
-Find Google Tech Lead's presentation of his interview question (here)https://medium.com/free-code-camp/bet-you-cant-solve-this-google-interview-question-4a6e5a4dc8ee]
+Find Google Tech Lead's presentation of his interview question (here)[https://medium.com/free-code-camp/bet-you-cant-solve-this-google-interview-question-4a6e5a4dc8ee]
 
 ## Problem
 Given a grid of colored cells, find the maximum number of connected colors.
